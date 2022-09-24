@@ -6,7 +6,7 @@ let tarefas = JSON.parse(localStorage.getItem("@listaTarefas")) || [];
 
 function renderTarefas() {
   listElement.innerHTML = "";
-
+  
   tarefas.map((todo) => {
     let liElement = document.createElement("li")
     let tarefaText = document.createTextNode(todo);
